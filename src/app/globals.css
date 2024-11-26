@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+    p,h1,button{
+        @apply text-quaternary;
+    }
+
+    *{
+        @apply font-inter;
+    }
+}
