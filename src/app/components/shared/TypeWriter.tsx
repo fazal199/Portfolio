@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { memo } from 'react'
 import TypeWriterText from 'typewriter-effect'
 
 
@@ -16,4 +16,4 @@ const TypeWriter = ({className,strings}:any) => {
   )
 }
 
-export default TypeWriter
+export default memo(TypeWriter)

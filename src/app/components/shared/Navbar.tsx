@@ -2,16 +2,17 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { NAV_ITEMS } from '../../../../constants';
+import { memo } from 'react';
 
 
 const Navbar = () => {
   const pathname = usePathname()
 
   return (
-    <header className='py-5' style={{
-        background: 'linear-gradient(to bottom,black,transparent)'
+    <header className='py-5 sticky top-0 z-50 ' style={{
+        background: 'linear-gradient(to bottom,black 30%,transparent)'
     }}>
-        <nav className=" shadow-md ">
+        <nav>
           <div className="max-w-7xl mx-auto px-4 flex flex-row flex-wrap justify-between">
             
               <div>
@@ -23,17 +24,19 @@ const Navbar = () => {
                 </Link>
               </div>
               
-              <div className="flex items-center gap-6">
+              <ul className="flex items-center gap-6">
                 {NAV_ITEMS.map((item:any) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className={`px-3 py-2 rounded-md text-md ${pathname == item.href && 'bg-tertiary/80'}  font-medium text-quaternary`}
-                  >
-                    {item.name}
-                  </Link>
+                 <li  key={item.name}>
+                    <Link
+                     
+                      href={item.href}
+                      className={`px-3 py-2  font-semibold tracking-wide rounded-md text-md ${pathname == item.href && 'bg-tertiary/80'}  font-medium text-quaternary`}
+                    >
+                      {item.name}
+                    </Link>
+                 </li>
                 ))}
-              </div>
+              </ul>
             </div>
           
         </nav>
@@ -42,5 +45,5 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default memo(Navbar)
 

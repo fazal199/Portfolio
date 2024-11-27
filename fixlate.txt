@@ -1,1 +1,2 @@
 fix the extension to webp in hero section
+fix the extension to webp in the skills page

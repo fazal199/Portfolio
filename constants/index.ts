@@ -72,11 +72,52 @@ const PROJECTS = [
       image: '/services/serv1.webp',
     },
   ]
-  
+  const SKILL_CATEGORIES = [
+    {
+        title: 'Frontend Skills',
+        skills: [
+            { name: 'HTML', src: '/skillslogos/html.png' },
+            { name: 'CSS', src: '/skillslogos/css.png' },
+            { name: 'Tailwind CSS', src: '/skillslogos/tailwind.png' },
+            { name: 'JavaScript', src: '/skillslogos/javascript.png' },
+            { name: 'jQuery', src: '/skillslogos/jquery.png' },
+            { name: 'TypeScript', src: '/skillslogos/typescript.png' },
+            { name: 'Node.js', src: '/skillslogos/nodelogo.webp' },
+            { name: 'React', src: '/skillslogos/reactlogo.webp' },
+            { name: 'Next.js', src: '/skillslogos/nextlogo.jpg' },
+            { name: 'Redux', src: '/skillslogos/reduxlogo.webp' },
+            { name: 'GSAP', src: '/skillslogos/gsap.png' }
+        ]
+
+    },
+    {
+        title: 'Backend Skills',
+        skills: [
+            { name: 'Express.js', src: '/skillslogos/expressjs.png' },
+            { name: 'MongoDB', src: '/skillslogos/mongodblogo.webp' },
+            { name: 'Mongoose', src: '/skillslogos/mongoose.png' }
+        ]
+
+    },
+    {
+        title: 'Tools',
+        skills: [
+            { name: 'Postman', src: '/skillslogos/postman.png' },
+            { name: 'Git', src: '/skillslogos/git.png' },
+            { name: 'GitHub', src: '/skillslogos/github.png' },
+            { name: 'Notion', src: '/skillslogos/notion.png' },
+            { name: 'Cursor AI', src: '/skillslogos/cursor.webp' },
+            { name: 'Chatgpt', src: '/skillslogos/chatgpt.png' },
+            { name: 'Claude AI', src: '/skillslogos/claude.png' },
+        ]
+
+    }
+]
   
 export {
     NAV_ITEMS,
     TYPEWRITER_HERO,
     PROJECTS,
-    SERVICES
+    SERVICES,
+    SKILL_CATEGORIES
 }

@@ -1,5 +1,5 @@
 import { BackgroundLines } from '@/app/components/ui/background-lines'
-import { Github, Twitter, Linkedin, Instagram } from 'lucide-react'
+import { Github, Twitter, Linkedin, Instagram, Mail } from 'lucide-react'
 import Link from 'next/link'
 import TypeWriter from '@/app/components/shared/TypeWriter'
 import { TYPEWRITER_HERO } from '../../../../constants'
@@ -36,19 +36,16 @@ export default function HeroSection() {
               <div className="flex gap-8 pt-4">
                 <Link href="#" className="hover:scale-110 border-2 border-solid border-tertiary p-4 shadow-md shadow-tertiary rounded-full transition-transform">
                   <Github className="w-6 h-6" />
-                  <span className="sr-only">GitHub</span>
                 </Link>
                 <Link href="#" className="hover:scale-110 border-2 border-solid border-tertiary p-4 shadow-md shadow-tertiary rounded-full transition-transform">
                   <Twitter className="w-6 h-6" />
-                  <span className="sr-only">Twitter</span>
                 </Link>
                 <Link href="#" className="hover:scale-110 border-2 border-solid border-tertiary p-4 shadow-md shadow-tertiary rounded-full transition-transform">
                   <Linkedin className="w-6 h-6" />
-                  <span className="sr-only">LinkedIn</span>
                 </Link>
                 <Link href="#" className="hover:scale-110 border-2 border-solid border-tertiary p-4 shadow-md shadow-tertiary rounded-full transition-transform">
-                  <Instagram className="w-6 h-6" />
-                  <span className="sr-only">Instagram</span>
+                  <Mail className="w-6 h-6" />
+                 
                 </Link>
               </div>
             </div>
