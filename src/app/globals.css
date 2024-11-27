@@ -2,12 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    p,h1,button{
-        @apply text-quaternary;
-    }
+@layer base {
+  p,
+  h1,
+  button {
+    @apply text-quaternary;
+  }
 
-    *{
-        @apply font-inter;
-    }
+  * {
+    @apply font-inter;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+  .slight-border {
+    @apply border-2 border-solid border-quaternary/20;
+  }
+  .slight-shadow {
+    box-shadow: 0 0 8px #696969;
+  }
 }
