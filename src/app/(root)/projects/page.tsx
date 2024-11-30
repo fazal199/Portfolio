@@ -8,7 +8,7 @@ const ProjectsPage = () => {
     <section className='border-2 py-10 slight-border'>
     <div className="py-10 px-4 bg-secondary  max-w-[95vw] mx-auto">
         <Heading content="All Projects"/>
-        <div className="grid grid-cols-3 gap-8 mt-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-3 gap-x-8 gap-y-16 mt-12 max-w-7xl mx-auto">
             {PROJECTS.map((project, index) => (
               <ProjectCard key={index} project={project} />
             ))}

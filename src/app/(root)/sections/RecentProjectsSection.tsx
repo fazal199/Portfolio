@@ -13,7 +13,7 @@ export default function RecentProjects() {
 
         <Heading content="Recent Projects" />
         <div className="grid grid-cols-3 gap-8 mt-12 max-w-7xl mx-auto">
-            {PROJECTS.map((project, index) => (
+            {PROJECTS.slice(0,3).map((project, index) => (
               <ProjectCard key={index} project={project} />
             ))}
         </div>

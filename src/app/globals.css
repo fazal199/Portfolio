@@ -12,6 +12,10 @@
   * {
     @apply font-inter;
   }
+
+  ::selection{
+     @apply text-tertiary bg-quaternary;
+  }
 }
 
 @layer components {
