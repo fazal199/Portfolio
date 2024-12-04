@@ -2,17 +2,19 @@ import Link from 'next/link'
 import React from 'react'
 import { FaCheckCircle } from "react-icons/fa";
 import { ImArrowUpRight2 } from "react-icons/im";
-const ProjectCard = ({ project }: any) => {
+
+const ProjectCard = ({ project,className }: any) => {
   return (
    
       <div
-        className="bg-primary z-20 rounded-lg slight-shadow slight-border relative  overflow-hidden">
+        
+        className={`bg-primary hover:shadow-md  hover:shadow-quaternary cursor-pointer z-20 rounded-lg slight-shadow slight-border relative  overflow-hidden ${className}`}>
         <img
           loading='lazy'
           src={project.image}
           alt={project.title}
 
-          className="w-full min-h-56 object-cover object-center"
+          className="w-full min-h-56 object-cover object-center mobile-sm:min-h-44"
 
         />
         <div className="p-6 bg-primary">
@@ -33,9 +35,9 @@ const ProjectCard = ({ project }: any) => {
             ))}
           </ul>
           <div className='grid grid-cols-2 gap-3 mt-5'>
-            <Link href={`/detail/${project.id}`}>
+            <Link href={`/projectdetails/${project.id}`}>
               <button className=" py-2 w-full rounded-md bg-tertiary  text-quaternary font-bold transition duration-200 hover:bg-transparent  border-2 border-transparent hover:border-tertiary">
-                More
+                Detail
               </button>
             </Link>
             <Link href={project.liveLink}>

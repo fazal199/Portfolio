@@ -6,8 +6,12 @@ import { primaryFont } from "../../public/fonts";
 export const metadata: Metadata = {
   title: "Web-Developer From Vapi",
   description: "Need a Website or Web-App To Grow Your Business? So I am here to Provide The Best Website or Web-App For Your Business",
-  keywords: ['web developer, web development, web developer vapi'],
-  authors: [{ name: "Fazal Hussain" }]
+  keywords: ['web developer, web development, web developer vapi','web designer','web enthusiast'],
+  authors: [{ name: "Fazal Hussain" }],
+  icons: {
+    icon: "/logos/favicon.png",
+  }
+
 };
 
 export default function RootLayout({
@@ -19,7 +23,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${primaryFont} bg-primary`}>
+      <head>
+      <meta name="robot" content="index, follow"/>
+      </head>
+      <body className={`${primaryFont} bg-primary w-screen`}>
         {children}</body>
     </html>
   );

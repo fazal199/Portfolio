@@ -1,7 +1,6 @@
 "use client";
 import Heading from '@/app/components/shared/Heading'
 import SocialHandles from '@/app/components/shared/SocialHandles';
-import Link from 'next/link'
 import React, { useState } from 'react'
 import Swal from 'sweetalert2';
 const ContactPage = () => {
@@ -53,21 +52,21 @@ const ContactPage = () => {
 
     }
     return (
-        <section className='border-2 py-2 slight-border'>
+        <section className='border-2 py-2 slight-border mobile-sm:border'>
             <div className="py-5 px-4 bg-secondary  max-w-[95vw] mx-auto">
                 <Heading content="Contact" />
-                <div className="grid grid-cols-2 gap-2 mt-12 items-center py-5">
-                    <div className="relative rounded-lg  shadow-xl">
+                <div className="grid grid-cols-2 gap-12 mt-12 items-center py-5 mobile:grid-cols-1">
+                    <div className="relative rounded-lg  shadow-xl mobile:px-5">
                         <img
                             loading='lazy'
                             src="/illustrations/contactillu.webp"
                             alt="Contact Us"
-                            className="transition-transform  outline-4 outline-offset-8 outline outline-tertiary block mx-auto duration-300 max-h-[30rem] rounded-full transform hover:scale-105"
+                            className="transition-transform  outline-4 outline-offset-8 outline outline-tertiary block mx-auto duration-300 max-h-[30rem] rounded-full transform hover:scale-105 mobile:max-h-[20rem]"
                         />
                     </div>
                     <div className="space-y-8">
-                        <div className='flex gap-7 items-center'>
-                            <h2 className="text-4xl font-bold text-quaternary pt-4">Get in Touch:-</h2>
+                        <div className='flex flex-wrap gap-7 items-center laptop:gap-2 mobile:justify-center'>
+                            <h2 className="text-4xl font-bold text-quaternary pt-4 laptop:text-2xl ">Get in Touch:-</h2>
                             <SocialHandles/>
                         </div>
                         <form onSubmit={handleSubmit} className="space-y-6">
@@ -84,8 +83,8 @@ const ContactPage = () => {
                             </div>
                             <div>
                                 <label htmlFor="email" className="block font-semibold text-sm text-quaternary mb-1">Email</label>
-                                value={formData.email}
-                                <input type="text" onChange={(e) => setFormData({ ...formData, email: e.target.value })} placeholder="e.g. myemail123@gmail.com" className='w-full text-quaternary bg-primary px-4 py-2 border border-tertiary rounded-md focus:ring-2 focus:ring-tertiary focus:border-transparent' />
+                               
+                                <input type="text"  value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} placeholder="e.g. myemail123@gmail.com" className='w-full text-quaternary bg-primary px-4 py-2 border border-tertiary rounded-md focus:ring-2 focus:ring-tertiary focus:border-transparent' />
                             </div>
                             <div>
                                 <label htmlFor="message" className="block font-semibold text-sm  text-quaternary mb-1">Your Message</label>

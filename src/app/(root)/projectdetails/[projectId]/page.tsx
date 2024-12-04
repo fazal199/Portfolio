@@ -12,20 +12,20 @@ const ProjectDetail = async ({ params }: any) => {
 
 
     return (
-        <section className='border-2 py-10 slight-border'>
+        <section className='border-2 py-10 slight-border mobile:border'>
             <div className="py-10 px-4 bg-secondary  max-w-[95vw] mx-auto">
 
-                <div className="grid grid-cols-2 gap-16 mt-12 max-w-[90vw] mx-auto">
+                <div className="grid grid-cols-2 gap-16 mt-12 max-w-[90vw] mx-auto laptop:max-w-[97vw] laptop:gap-8 tablet:grid-cols-1 mobile:mt-0">
                     <div>
-                        <img src={projectData.image} className='w-full rounded-md object-cover object-[top_left] h-full slight-border shadow-md shadow-tertiary' alt="profile pic" />
+                        <img src={projectData.image} className='w-full rounded-md object-cover object-[top_left]  h-full slight-border shadow-md shadow-tertiary laptop:object-center' alt="profile pic" />
                     </div>
 
                     <div className=" space-y-6">
-                        <h1 className="text-3xl inline-block font-bold pb-2 border-b-4 border-tertiary tracking-wide">
-                            {projectData.title}
+                        <h1 className="text-3xl inline-block font-bold pb-2 border-b-4 border-tertiary tracking-wide mobile:text-2xl mobile-sm:text-xl">
+                            {projectData.title}:
                         </h1>
-                        <div className='flex gap-4'>
-                            <p className='font-bold text-lg'> Tech Used:-</p>
+                        <div className='flex flex-wrap gap-4'>
+                            <p className='font-bold text-lg mobile-sm:text-sm'> Tech Used:-</p>
                             <div className='flex gap-3 flex-wrap' >
                                 {
                                     projectData.tags.map(tag => (
@@ -39,7 +39,7 @@ const ProjectDetail = async ({ params }: any) => {
                             </div>
                         </div>
 
-                        <p className="text-quaternary/80  leading-7 text-lg">
+                        <p className="text-quaternary/80  text-lg mobile-sm:text-sm  !leading-[1.7rem]">
                           {projectData.description}
                         </p>
                         <div className='grid grid-cols-2 gap-4'>

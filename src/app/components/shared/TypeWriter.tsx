@@ -3,7 +3,7 @@ import React, { memo } from 'react'
 import TypeWriterText from 'typewriter-effect'
 
 
-const TypeWriter = ({className,strings}:any) => {
+const TypeWriter = ({className,strings}:{className: string,strings: Array<string>}) => {
   return (
     <div className={`${className}`}>
         <TypeWriterText options={{
