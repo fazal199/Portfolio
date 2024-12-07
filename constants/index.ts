@@ -15,7 +15,7 @@ const PROJECTS = [
   {
     id: 1,
     title: "Imaginify [Image Editing]",
-    image: "/projectimages/img1.webp",
+    image: "/projectimages/imaginify.webp",
     tags: ["Nextjs", "Cloudinary", "Clerk"],
     functionalities: [
       "User authentication",
@@ -28,28 +28,11 @@ const PROJECTS = [
     liveLink: "https://imaginify-sooty-kappa.vercel.app/",
     codeLink: "https://github.com/fazal199/imaginify",
   },
-  /*   {
-  id : 2,
-    title: "The TrueFeedback",
-    image: "",
-    tags: ["Nextjs", "NextAuth", "Mongodb"],
-  functionalities: [
-    "User authentication",
-    "Smooth User Experience",
-    "Form Validation",
-    "Responsive UI",
-  ],
-    description:
-       "I created a Fullstack web application called TrueFeedback using Next.js as the framework, NextAuth for authentication, and MongoDB as the database. With TrueFeedback, you can send and receive feedback from anonymous people. It's a social platform where one person can send anonymous feedback to another without revealing their identity. The receiver receives the feedback in the form of a text message.", 
-
-  liveLink: "https://imaginify-sooty-kappa.vercel.app/",
-  codeLink: "https://github.com/fazal199/imaginify",
-  }, */
 
   {
     id: 3,
     title: "The Movix [Movie App]",
-    image: "/projectimages/img3.webp",
+    image: "/projectimages/movix.webp",
     tags: ["React", "Redux", "Sass"],
     functionalities: [
       "Global State Management",
@@ -65,7 +48,7 @@ const PROJECTS = [
   {
     id: 4,
     title: "The Password Manager",
-    image: "/projectimages/img4.webp",
+    image: "/projectimages/passguru.webp",
     tags: ["React", "Mongodb", "Tailwindcss"],
     functionalities: [
       "Manage Password",
@@ -75,14 +58,14 @@ const PROJECTS = [
     ],
     description:
       "I created a mini full-stack web application called PassGuru using React, Express.js, and MongoDB. With PassGuru, you don't need to remember your passwords. You can manage your passwords for different applications. You can easily create, delete, and edit your password information whenever you want, all for free.",
-    liveLink: "https://pass-guru-mern-app.vercel.app/",
+    liveLink: "https://passguru-mern-app-frontend.onrender.com/",
     codeLink: "https://github.com/fazal199/PassGuru-Mern-App",
   },
 
   {
     id: 5,
     title: "The Coindex",
-    image: "/projectimages/img5.webp",
+    image: "/projectimages/coindex.webp",
     tags: ["React", "Redux", "Axios"],
     functionalities: [
       "Real-Time Data Fetching",
@@ -99,7 +82,7 @@ const PROJECTS = [
   {
     id: 6,
     title: "The Text Utils",
-    image: "/projectimages/img5.webp",
+    image: "/projectimages/textutils.webp",
     tags: ["React", "Tailwindcss", "Javascript"],
     functionalities: [
       "Text Editing",
@@ -117,7 +100,7 @@ const PROJECTS = [
   {
     id: 7,
     title: "The Currency Converter",
-    image: "/projectimages/img5.webp",
+    image: "/projectimages/currency-converter.webp",
     tags: ["React", "Tailwindcss", "Javascript"],
     functionalities: [
       "Data Fetching",

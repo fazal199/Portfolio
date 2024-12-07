@@ -62,9 +62,8 @@ export default function HeroSection() {
               <div className={`text-3xl font-bold mt-8 text-white laptop:text-xl tablet:text-xl`}><span className='inline-block'>I am a</span>
                 <TypeWriter className="text-3xl inline-block ml-3 laptop:text-xl tablet:text-xl mobile-md:ml-1" strings={TYPEWRITER_HERO} />
               </div>
-              <p className="text-quaternary/80 max-w-xl tablet:text-sm mobile:text-center mobile:mx-auto mobile:leading-7">
-                I create Websites and Web-Apps for Businesses and Individuals.
-                
+              <p className="text-quaternary/80 max-w-xl leading-7 tablet:text-sm mobile:text-center mobile:mx-auto mobile:leading-7">
+              I build fast, SEO-optimized Websites and Web application to help Businesses or Individuals to grow online.
               </p>
               <div className='flex gap-5 items-center   mobile:justify-center'>
                 <Link className='gsp-hero-btn' href={"/about"}>

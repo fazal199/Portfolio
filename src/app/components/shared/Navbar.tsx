@@ -69,6 +69,7 @@ const Navbar = () => {
   
         </nav>
       </header>
+      {/* only for mobile */}
       <MobileNav/>
    </>
 

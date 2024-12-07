@@ -52,11 +52,11 @@ const MobileNav = () => {
     })
     return (
         <>
-            <header ref={container} className='py-2 sticky top-0 z-50 !bg-primary hidden mobile-md:block' style={{
+            <header ref={container} className='py-2 sticky top-0 z-50 !bg-primary hidden mobile-md:block mobile-md:shadow-md mobile-md:shadow-tertiary' style={{
                 background: 'linear-gradient(to bottom,black 30%,transparent)'
             }}>
                 <nav>
-                    <div className="max-w-7xl mx-auto flex flex-row flex-wrap justify-between px-8 py-3 items-center">
+                    <div className="max-w-7xl mx-auto flex flex-row flex-wrap justify-between px-8 py-2 items-center">
 
                         <div className='relative'>
 
