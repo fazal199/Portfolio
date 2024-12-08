@@ -1,6 +1,6 @@
 {
     "buildCommand": "next build",
-    "installCommand": "npm install",
+    "installCommand": "npm i --legacy-peer-deps",
     "outputDirectory": "build",
     "public": true
 }
