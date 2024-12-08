@@ -192,6 +192,6 @@ const SKILL_CATEGORIES = [
   },
 ];
 
-const FREELANCE_EMAIL = "itsmefazal98@gmail.com"
+const FREELANCE_EMAIL = "workwithfazal98@gmail.com"
 
 export { NAV_ITEMS, TYPEWRITER_HERO, PROJECTS, SERVICES, SKILL_CATEGORIES,FREELANCE_EMAIL };
