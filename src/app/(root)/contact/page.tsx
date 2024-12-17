@@ -101,7 +101,7 @@ const ContactPage = () => {
                                     className="w-full px-4 py-2 border border-tertiary bg-primary shadow text-quaternary  rounded-md focus:ring-2 focus:ring-tertiary focus:border-transparent resize-none"
                                 ></textarea>
                             </div>
-                            <button type='submit' className="px-8 py-2 block w-full text-xl font-semibold rounded-md border-transparent bg-tertiary  text-quaternary  transition duration-200  hover:bg-transparent  border-2 hover:border-quaternary hover:text-tertiary">
+                            <button type='submit' className="px-8 py-2 block w-full text-xl font-semibold rounded-md border-transparent bg-tertiary  text-quaternary  transition duration-200 active:bg-quaternary active:text-tertiary  hover:bg-transparent  border-2 hover:border-quaternary hover:text-tertiary">
                                 Contact
                             </button>
                         </form>

@@ -79,7 +79,7 @@ const ServicesSection = () => {
                     href={"/contact"}
                     className=" w-full  text-quaternary font-medium  transition-colors duration-300"
                   >
-                    <button className="w-full text-xl py-3 group flex justify-center items-center gap-2 tracking-wide  mt-5  rounded-md bg-transparent  text-tertiary font-bold transition duration-200 hover:bg-tertiary  border-2 border-quaternary hover:text-quaternary hover:border-transparent mobile-md:py-2 mobile-md:text-lg">
+                    <button className="w-full text-xl py-3 group flex justify-center items-center gap-2 tracking-wide  mt-5  rounded-md bg-transparent  text-tertiary font-bold transition duration-200 hover:bg-tertiary  border-2 border-quaternary hover:text-quaternary hover:border-transparent active:bg-quaternary active:text-tertiary mobile-md:py-2 mobile-md:text-lg">
                       Contact
                     </button>
 
