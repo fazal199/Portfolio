@@ -47,7 +47,6 @@ export default function HeroSection() {
   ); 
 
 
-
   return (
     <section ref={container} className=" bg-black text-quaternary py-6">
       <BackgroundLines>
@@ -71,11 +70,12 @@ export default function HeroSection() {
                     About
                   </button>
                 </Link>
-                <Link className='gsp-hero-btn' href={"/contact"}>
+                {/* in the download attribute, we have provided a new name to file :) */}
+                <a download={"fazalhussainresume.pdf"} href='/job/fazalhussainresume.pdf' className='gsp-hero-btn'>
                   <button className="px-8 py-2 rounded-md bg-transparent  text-tertiary font-bold transition duration-200 hover:bg-tertiary  border-2 border-quaternary hover:text-quaternary hover:border-transparent tablet:text-sm">
-                    Contact
+                    Resume
                   </button>
-                </Link>
+                </a>
               </div>
 
               {/* Social Links */}
