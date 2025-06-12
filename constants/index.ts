@@ -30,7 +30,7 @@ const PROJECTS = [
   },
 
   {
-    id: 3,
+    id: 2,
     title: "The Movix [Movie App]",
     image: "/projectimages/movix.webp",
     tags: ["React", "Redux", "Sass"],
@@ -46,7 +46,7 @@ const PROJECTS = [
     codeLink: "https://github.com/fazal199/movix-movie-website",
   },
   {
-    id: 4,
+    id: 3,
     title: "The Password Manager",
     image: "/projectimages/passguru.webp",
     tags: ["React", "Mongodb", "Tailwindcss"],
@@ -63,7 +63,7 @@ const PROJECTS = [
   },
 
   {
-    id: 5,
+    id: 4,
     title: "The Coindex",
     image: "/projectimages/coindex.webp",
     tags: ["React", "Redux", "Axios"],
@@ -80,7 +80,7 @@ const PROJECTS = [
   },
 
   {
-    id: 6,
+    id: 5,
     title: "The Text Utils",
     image: "/projectimages/textutils.webp",
     tags: ["React", "Tailwindcss", "Javascript"],
@@ -98,7 +98,7 @@ const PROJECTS = [
   },
  //currency converter ka image daal yaha and live link bhi
   {
-    id: 7,
+    id: 6,
     title: "The Currency Converter",
     image: "/projectimages/currency-converter.webp",
     tags: ["React", "Tailwindcss", "Javascript"],
